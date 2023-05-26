@@ -1,0 +1,97 @@
+@import  "bootstrap-sprockets";
+@import  "bootstrap";
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+// <header>
+#title {
+  // float: left;                /* 左寄せ */
+  margin-left: 20px;             /* 右の余白を10pxに設定 */
+  font-size: 2.5em;              /* フォントサイズを1.7emに設定 */
+  color: #fff;                 /* テキストカラーを白色に設定 */
+  // letter-spacing: -1px;       /* 文字間のスペースを-1pxに設定 */
+  // padding-top: 9px;           /* 上側の余白を9pxに設定 */;
+  height: auto;
+  }
+
+#title:hover {
+  color: #fff;              /* ホバー時のテキストカラーを白色に設定 */
+  text-decoration: none;      /* ホバー時のテキスト装飾をなしに設定 */
+}
+
+.contaner {
+  font-size: large;
+}
+
+.navbar {
+  height: 90px;
+  background-color: #1b5678;  /* primary-color */
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.btn {
+  /* button_white */
+/* オートレイアウト */
+
+// display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top: -30px;
+margin-right: 40px;          /* 右の余白を10pxに設定 */
+// padding: 30px 60px;
+
+width: 152px;
+height: 53px;
+
+/* white */
+
+background: #FFFFFF;
+border-radius: 4px;
+
+/* オートレイアウト内部 */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1b5678;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.wapper {
+  height: 20px;
+  position: relative;
+}

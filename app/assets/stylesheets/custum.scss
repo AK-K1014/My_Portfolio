@@ -2,23 +2,17 @@
 @import  "bootstrap";
 
 body {
-  padding-top: 60px;
+  padding-top: 200px;
+  padding-left: 550px;
 }
 
-section {
-  overflow: auto;
+.h1 {
+  padding-top: 100px;
 }
 
-textarea {
-  resize: vertical;
-}
-
-.center {
-  text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+.con {
+  padding-top: 20px;
+  font-size: large;
 }
 
 // <header>
@@ -37,12 +31,12 @@ textarea {
   text-decoration: none;      /* ホバー時のテキスト装飾をなしに設定 */
 }
 
-.contaner {
-  font-size: large;
-}
+// .container {
+//   : ;
+// }
 
 .navbar {
-  height: 90px;
+  height: 120px;
   background-color: #1b5678;  /* primary-color */
 }
 
@@ -57,13 +51,11 @@ textarea {
   /* button_white */
 /* オートレイアウト */
 
-// display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-margin-top: -30px;
-margin-right: 40px;          /* 右の余白を10pxに設定 */
-// padding: 30px 60px;
+margin-top: -48px;
+margin-right: 40px;          
 
 width: 152px;
 height: 53px;
@@ -80,6 +72,66 @@ order: 1;
 flex-grow: 0;
 }
 
+/*header下*/
+.login_title {
+  padding: 10px 0px 150px 0px;
+  font-size: 50px;
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-control{
+  color: #000000 !important;
+  font-size: 30px;
+  border: none;
+  padding: 25px;
+  padding-left: 10px;
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 10px;
+  outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.form-group {
+  margin: 10px 0px 60px 0px;
+}
+
+.btn-primary{
+  background-color: #1b5678;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 5px;
+  width: 268px;
+  height: 53px;
+  font-size: 20px;
+  font-weight: inherit;
+  flex: none;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+/*footer*/
 .footer {
   position: fixed;
   bottom: 0;

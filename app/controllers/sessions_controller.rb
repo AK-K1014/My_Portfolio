@@ -7,19 +7,18 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       reset_session
       log_in user
-      redirect_to @top_loggedln
+      redirect_to top_loggedln_path
     else
       flash[:danger] = 'Invalid email/password combination'
       render 'login', status: :unprocessable_entity
     end
-  end
+  end  
 
   def destroy
   end
   private
 
   def user_params
-    params.require(:user).permit(:name, :email, :password,
-                                  :password_confirmation)
+    params.require(:user).permit(:email)
   end
 end

@@ -17,27 +17,20 @@ body {
 
 // <header>
 #title {
-  // float: left;                /* 左寄せ */
-  margin-left: 20px;             /* 右の余白を10pxに設定 */
-  font-size: 2.5em;              /* フォントサイズを1.7emに設定 */
-  color: #fff;                 /* テキストカラーを白色に設定 */
-  // letter-spacing: -1px;       /* 文字間のスペースを-1pxに設定 */
-  // padding-top: 9px;           /* 上側の余白を9pxに設定 */;
+  margin-left: 20px;             
+  font-size: 2.5em;              
+  color: #fff;                 
   height: auto;
   }
 
 #title:hover {
-  color: #fff;              /* ホバー時のテキストカラーを白色に設定 */
-  text-decoration: none;      /* ホバー時のテキスト装飾をなしに設定 */
+  color: #fff;              
+  text-decoration: none;     
 }
-
-// .container {
-//   : ;
-// }
 
 .navbar {
   height: 120px;
-  background-color: #1b5678;  /* primary-color */
+  background-color: #1b5678;  
 }
 
 .navbar-nav {

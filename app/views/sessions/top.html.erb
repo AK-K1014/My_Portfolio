@@ -13,7 +13,7 @@
     <%= render 'layouts/header' %>
     <div class="self-introduction px-4">
       <h2 class="self border-bottom border-danger">自己紹介</h2>
-      <p>トップベージ</p>
+      <p class="text-danger">ログインして、自己紹介文と画像を登録しましょう！</p>
     </div>
 
     <div class="avatar d-flex aligin-item-center">
@@ -25,8 +25,8 @@
     </div>
       <img src="/assets/d2f6d7629a9e2bfd1f2e4c8e1aabefca.jpg" class="ps-5"  width="1000" hight="1000" alt="スキルチャート">
     <div class="container">
-        <%= yield %>
-        <%= render 'layouts/footer' %>
-      </div>
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+    </div>
   </body>
 </html>

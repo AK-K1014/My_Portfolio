@@ -2,8 +2,8 @@
 @import  "bootstrap";
 
 body {
-  padding-top: 200px;
-  padding-left: 550px;
+  padding-top: 150px;
+  padding-left: 450px;
 }
 
 .h1 {
@@ -48,8 +48,7 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 margin-top: -48px;
-margin-right: 40px;          
-
+margin-right: 40px;
 width: 152px;
 height: 53px;
 
@@ -65,7 +64,7 @@ order: 1;
 flex-grow: 0;
 }
 
-/*header下*/
+/*ログイン画面*/
 .login_title {
   padding: 10px 0px 150px 0px;
   font-size: 50px;
@@ -140,3 +139,42 @@ flex-grow: 0;
   height: 20px;
   position: relative;
 }
+
+/*トップ画面*/
+/*自己紹介*/
+.self-introduction {
+  padding-bottom: 50px;
+  padding-left: 500px;
+}
+
+.self {
+  width: 240px;
+  height: 40px;
+  border-bottom:2px solid #333
+}
+
+/*スキルチャート*/
+.chart {
+  padding-top: 140px;
+  padding-left: 400px;
+  width: 200px;
+}
+
+.skill {
+  padding: 0px 0px 0px 70px;
+  width: 340px;
+  height: 40px;
+  border-bottom:2px solid #333
+}
+
+.px-1 {
+  padding-right: 50px;
+}
+
+/*アバター画像*/
+.avatar {
+  position: absolute;
+  top: 170px;
+  left: 550px;
+}
+

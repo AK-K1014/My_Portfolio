@@ -13,9 +13,6 @@ class SessionsController < ApplicationController
       render 'login', status: :unprocessable_entity
     end
   end  
-
-  def destroy
-  end
   private
 
   def user_params

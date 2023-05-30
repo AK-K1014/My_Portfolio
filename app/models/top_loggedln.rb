@@ -1,0 +1,2 @@
+class TopLoggedln < ApplicationRecord
+end

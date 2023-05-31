@@ -13,9 +13,10 @@ class SessionsController < ApplicationController
       render 'login', status: :unprocessable_entity
     end
   end  
+
   private
 
   def user_params
-    params.require(:user).permit(:email)
+    params.require(:user).permit(:email, :avatar)
   end
 end

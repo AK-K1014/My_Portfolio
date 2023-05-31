@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get  "/login", to: "sessions#login"
   post "/login", to: "sessions#create"
   get  "/top_loggedln", to: "top_loggedln#new", as: :top_loggedln
+  get  "/profile_edit", to: "profile_edit#edit"
 end

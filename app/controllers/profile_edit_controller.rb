@@ -7,10 +7,10 @@ class ProfileEditController < ApplicationController
   end
 
   def create
-    binding.pry
-    @user = User.create!(user_params)
+    @user = current_user
+    @user.update(user_params)
     session[:user_id] = @user.id
-    redirect_to root_path
+    redirect_to top_loggedln_path
   end
 
   # def update
@@ -22,6 +22,6 @@ class ProfileEditController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:content, :image)
+    params.permit(:description, :image)
   end
 end

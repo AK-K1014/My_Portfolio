@@ -1,6 +1,22 @@
-<h1>ProfileEdit#edit</h1>
-<p>Find me in app/views/profile_edit/edit.html.erb</p>
-
 <body>
-  
+  <%= render 'layouts/logout_header' %>
+  <h1>自己紹介を編集する</h1>
+  <div>
+    <p>自己紹介文</p>
+      <div class="control">
+        <div class="label">自己紹介文</div>
+        <input type="text" class="form-control">
+        <div class="label">２００文字以内で収める</div>
+      </div>
+    </div>
+  </div>
+
+    <div class="">
+      <%= form_with model: @user,local: true do |f| %>
+        <%= f.text_area :content %><br>
+        <%= f.file_field :image, multiple: true %><br>
+        <%= f.submit%>
+      <% end %>
+    </div>
+  <%= render 'layouts/footer' %>
 </body>

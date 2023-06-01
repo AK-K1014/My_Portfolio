@@ -12,11 +12,11 @@ class SessionsController < ApplicationController
       flash[:danger] = 'Invalid email/password combination'
       render 'login', status: :unprocessable_entity
     end
-  end  
+  end
 
   private
 
   def user_params
-    params.require(:user).permit(:email, :avatar)
+    params.require(:user).permit(:email)
   end
 end

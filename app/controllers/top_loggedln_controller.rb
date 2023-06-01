@@ -1,5 +1,6 @@
 class TopLoggedlnController < ApplicationController
   def new
+    @user = current_user
   end
 
   def destroy

@@ -19,12 +19,9 @@
       <button type="button" class="btn-profile-edit btn-bule btn-lg"><%= link_to "自己紹介を編集する", profile_edit_path %></button>
     </div>
 
-    <div class="">
-      <%= form_with(model: @user) do |f| %>
-        <%= f.file_field :avatar %>
-        <%= f.submit%>
-      <% end %>
-    </div>
+    <% if @user.image.attached? %>
+      <%= image_tag @user.image %>
+    <% end %>
 
     <div class="chart d-flex align-items-center">
       <h2 class="skill pd-4">スキルチャート</h2>

@@ -16,12 +16,10 @@
       <p>ここに自己紹介文を記載する。</br>
         私の名前はマイケル・ムーワです。
       </p>
-      <button type="button" class="btn-profile-edit btn-bule btn-lg"><%= link_to "自己紹介を編集する", profile_edit_path %></button>
+      <button type="button" class="btn-profile-edit btn-bule btn-lg"><%= link_to "自己紹介を編集する", edit_path %></button>
     </div>
 
-    <% if @user.image.attached? %>
-      <%= image_tag @user.image.variant(resize_to_limit: [100, 100]) %>
-    <% end %>
+      <%= image_tag @user.image if @user.image.attached? %>
 
     <div class="chart d-flex align-items-center">
       <h2 class="skill pd-4">スキルチャート</h2>
